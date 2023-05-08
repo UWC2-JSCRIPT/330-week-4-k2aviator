@@ -113,6 +113,7 @@ describe("/login", () => {
       });
     });
   });
+
   describe("After both users login", () => {
     let token0;
     let token1;
@@ -172,7 +173,6 @@ describe("/login", () => {
         });
         expect(loginRes1.statusCode).toEqual(200);
       });
-     
     });
     describe("POST /logout", () => {
       it("should reject bogus token", async () => {
@@ -217,5 +217,5 @@ describe("/login", () => {
         expect(res1.statusCode).toEqual(401);
       });
     });
-  });
+ });
 });
